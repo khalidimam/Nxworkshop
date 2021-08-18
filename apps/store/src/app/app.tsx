@@ -34,6 +34,7 @@ export const App = () => {
     fetch('/api/games')
       .then((x) => x.json())
       .then((res) => {
+        console.log("test");
         setState((state) => ({
           ...state,
           data: res,
