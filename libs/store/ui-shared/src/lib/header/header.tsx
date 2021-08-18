@@ -16,21 +16,21 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export interface HeaderProps {
-  title: string
+    title: string;
 }
 
 export const Header = ({ title }: HeaderProps) => {
-  const classes = useStyles();
+    const classes = useStyles();
 
-  return (
-    <AppBar position="static">
-      <Toolbar>
-        <Typography variant="h6" className={classes.title}>
-          {title}
-        </Typography>
-      </Toolbar>
-    </AppBar>
-  );
+    return (
+        <AppBar position="static">
+            <Toolbar>
+                <Typography variant="h6" className={classes.title}>
+                    {title}
+                </Typography>
+            </Toolbar>
+        </AppBar>
+    );
 };
 
 export default Header;
